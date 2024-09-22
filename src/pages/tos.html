@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Stumpy's Hosting</title>
+    <title>Terms of Service | Stumpy's Hosting</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom CSS for this page */
+        body {
+            scroll-behavior: smooth;
+        }
+        .section-number {
+            background: linear-gradient(to right, #6b46c1, #805ad5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: colorChange 3s infinite;
+        }
+        @keyframes colorChange {
+            0% { color: #805ad5; }
+            50% { color: #9f7aea; }
+            100% { color: #805ad5; }
+        }
+    </style>
 </head>
-
-<body class="bg-gray-900 text-white"></body>
+<body class="bg-gray-900 text-gray-300">
 
 <!-- Header Section -->
 <header class="fixed w-full bg-gray-900 z-50">
@@ -151,187 +168,108 @@
 </script>
 
 
+<!-- Main Content -->
+<main class="pt-24 max-w-screen-lg mx-auto px-6 py-12 bg-gray-800 rounded-lg shadow-md">
+    <h1 class="text-5xl font-extrabold text-white mb-8">Terms of Service</h1>
+    <p class="text-lg text-gray-400 mb-12">Effective Date: January 1, 2024</p>
+    
+    <section class="mb-8">
+        <h2 class="text-2xl font-bold text-white mb-2 flex items-center">
+            <span class="section-number text-3xl mr-2">1.</span> Introduction
+        </h2>
+        <p>Welcome to Stumpy's Hosting! These Terms of Service govern your access to and use of our services. By using our services, you agree to comply with these terms. Please read them carefully.</p>
+    </section>
 
+    <section class="mb-8">
+        <h2 class="text-2xl font-bold text-white mb-2 flex items-center">
+            <span class="section-number text-3xl mr-2">2.</span> Acceptance of Terms
+        </h2>
+        <p>By registering, accessing, or using our services, you confirm that you have read, understood, and agreed to these Terms. If you do not agree, you may not use our services.</p>
+    </section>
 
-<!-- Start Title Section -->
-<section class="relative bg-gray-900 text-white h-screen flex items-center justify-center overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center opacity-30 bg-[url('../../images/title-bg.png')] " style="">
-        <!-- Replace the URL with your image -->
-    </div>
-
-    <!-- Content Overlay -->
-    <div class="relative z-10 text-center px-6 mt-20"> <!-- Added mt-20 for spacing -->
-        <h1 class="text-5xl md:text-6xl font-extrabold mb-4 animate-fade-in">Stumpy's Hosting</h1>
-        <p class="text-lg md:text-xl mb-8 animate-fade-in delay-200">Fast Hosting at a good price.</p>
-        
-        <!-- Button (optional) -->
-        <a href="#services" class="inline-flex items-center bg-yellow-300 hover:bg-purple-800 text-black font-semibold font-medium rounded-lg text-base px-6 py-3 transition-colors duration-300 focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-800 animate-fade-in delay-400">
-             Explore Our Services
-            <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-         <path fill-rule="evenodd" d="M12.293 9.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 11.586l3.293-3.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-    </svg>
-</a>
-
-    </div>
-
-    <!-- Scroll Down Indicator -->
-    <div class="absolute bottom-4 text-center animate-bounce">
-        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-        </svg>
-    </div>
-</section>
-
-<!-- End Title Section -->
-
-<!-- Why Choose Us Section -->
-<section class="bg-black py-16">
-    <div class="max-w-screen-xl mx-auto px-4 text-center">
-        <h2 class="text-4xl font-extrabold text-white mb-12">Why Choose Us</h2>
-        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            
-            <!-- Card 1: Reliable Uptime -->
-            <div class="bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
-                <div class="flex items-center justify-center mb-4">
-                    <svg class="w-10 h-10 text-purple-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2a10 10 0 1 1-10 10A10 10 0 0 1 12 2Zm0 18a8 8 0 1 0-8-8 8 8 0 0 0 8 8Zm-1-13h2v6h-2Zm0 8h2v2h-2Z"></path>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-semibold text-white mb-2">Reliable Uptime</h3>
-                <p class="text-gray-300">We guarantee 99.9% uptime to ensure your services are always available.</p>
-            </div>
-            
-            <!-- Card 2: Affordable Pricing -->
-            <div class="bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
-                <div class="flex items-center justify-center mb-4">
-                    <svg class="w-10 h-10 text-green-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2a10 10 0 1 1-10 10A10 10 0 0 1 12 2Zm0 18a8 8 0 1 0-8-8 8 8 0 0 0 8 8ZM11 7h2v5h-2Zm0 7h2v2h-2Z"></path>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-semibold text-white mb-2">Affordable Pricing</h3>
-                <p class="text-gray-300">Our plans offer premium services without the high cost.</p>
-            </div>
-            
-            <!-- Card 3: 24/7 Support -->
-            <div class="bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
-                <div class="flex items-center justify-center mb-4">
-                    <svg class="w-10 h-10 text-red-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2a10 10 0 1 1-10 10A10 10 0 0 1 12 2Zm0 18a8 8 0 1 0-8-8 8 8 0 0 0 8 8ZM11 7h2v5h-2Zm0 7h2v2h-2Z"></path>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-semibold text-white mb-2">24/7 Support</h3>
-                <p class="text-gray-300">Our team is available around the clock to assist you.</p>
-            </div>
-            
-            <!-- Card 4: High Performance -->
-            <div class="bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
-                <div class="flex items-center justify-center mb-4">
-                    <svg class="w-10 h-10 text-yellow-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2a10 10 0 1 1-10 10A10 10 0 0 1 12 2Zm0 18a8 8 0 1 0-8-8 8 8 0 0 0 8 8ZM11 7h2v5h-2Zm0 7h2v2h-2Z"></path>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-semibold text-white mb-2">High Performance</h3>
-                <p class="text-gray-300">Experience blazing fast speeds with our optimized servers.</p>
-            </div>
-            
-            <!-- Card 5: Scalable Solutions -->
-            <div class="bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
-                <div class="flex items-center justify-center mb-4">
-                    <svg class="w-10 h-10 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2a10 10 0 1 1-10 10A10 10 0 0 1 12 2Zm0 18a8 8 0 1 0-8-8 8 8 0 0 0 8 8ZM11 7h2v5h-2Zm0 7h2v2h-2Z"></path>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-semibold text-white mb-2">Scalable Solutions</h3>
-                <p class="text-gray-300">Our hosting grows with your business, offering flexibility.</p>
-            </div>
-            
-            <!-- Card 6: Easy Control Panel -->
-            <div class="bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
-                <div class="flex items-center justify-center mb-4">
-                    <svg class="w-10 h-10 text-indigo-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2a10 10 0 1 1-10 10A10 10 0 0 1 12 2Zm0 18a8 8 0 1 0-8-8 8 8 0 0 0 8 8ZM11 7h2v5h-2Zm0 7h2v2h-2Z"></path>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-semibold text-white mb-2">Easy Control Panel</h3>
-                <p class="text-gray-300">Manage your hosting with ease using our intuitive control panel.</p>
-            </div>
-            
+    <section class="mb-8">
+        <h2 class="text-2xl font-bold text-white mb-2 flex items-center">
+            <span class="section-number text-3xl mr-2">3.</span> Changes to Terms
+        </h2>
+        <p>Stumpy's Hosting reserves the right to update or modify these Terms at any time without prior notice. Changes will be effective immediately upon being posted on our website. We encourage you to review the Terms periodically.</p>
+        <div class="mt-4 p-4 bg-purple-700 text-white rounded-md">
+            <p class="font-semibold">Tip: You can always check the latest version of our Terms at <a href="/tos" class="underline">/tos</a></p>
         </div>
-    </div>
-</section>
+    </section>
 
+    <section class="mb-8">
+        <h2 class="text-2xl font-bold text-white mb-2 flex items-center">
+            <span class="section-number text-3xl mr-2">4.</span> Account Registration and Security
+        </h2>
+        <p>To use certain services, you may be required to register and create an account. You agree to provide accurate, complete information and to keep your account secure. You are responsible for all activity under your account.</p>
+        <ul class="list-disc list-inside mt-2">
+            <li>Never share your password with others.</li>
+            <li>Notify us immediately of any unauthorized access.</li>
+        </ul>
+    </section>
 
-<!-- Start Card Section -->
-<section id="services" class="bg-gray-900 py-12">
-    <div class="max-w-screen-xl mx-auto px-4">
-        <h2 class="text-4xl font-extrabold text-white text-center mb-12">Our Hosting Services</h2>
-        <div class="grid gap-8 lg:grid-cols-3 sm:grid-cols-2">
-            <html class="scroll-smooth"></html>
-            
-            <!-- VPS Hosting Card -->
-            <div class="bg-gradient-to-br from-purple-700 to-indigo-600 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
-                <h3 class="text-2xl font-bold text-white mb-4">VPS Hosting</h3>
-                <p class="text-gray-200 mb-6">Fast and reliable Virtual Private Servers to support your gaming community start as low as $3.15/month.</p>
-                <a href="#" class="inline-flex items-center text-white font-medium hover:text-gray-200">
-                    Read More 
-                    <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 6.414V17a1 1 0 11-2 0V6.414L4.707 10.707a1 1 0 01-1.414-1.414l6-6z" clip-rule="evenodd"/>
-                    </svg>
-                </a>
-            </div>
-            
-            <!-- Game Servers Card -->
-            <div class="bg-gradient-to-br from-teal-500 to-cyan-600 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
-                <h3 class="text-2xl font-bold text-white mb-4">Game Servers</h3>
-                <p class="text-gray-200 mb-6">Set up a private gaming server for as low as $3 a month.Choose from Minecraft, Gary's Mod, and MANY others.</p>
-                <a href="#" class="inline-flex items-center text-white font-medium hover:text-gray-200">
-                    Read More
-                    <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 6.414V17a1 1 0 11-2 0V6.414L4.707 10.707a1 1 0 01-1.414-1.414l6-6z" clip-rule="evenodd"/>
-                    </svg>
-                </a>
-            </div>
+    <section class="mb-8">
+        <h2 class="text-2xl font-bold text-white mb-2 flex items-center">
+            <span class="section-number text-3xl mr-2">5.</span> Prohibited Activities
+        </h2>
+        <p>You agree not to engage in any activities that are illegal, harmful, or could damage or interfere with our services. These include but are not limited to:</p>
+        <ul class="list-disc list-inside mt-2">
+            <li>Spamming or distributing malware.</li>
+            <li>Attempting to gain unauthorized access to our systems.</li>
+            <li>Using our services for any unlawful activities.</li>
+        </ul>
+    </section>
 
-            <!-- Dedicated Servers Card -->
-            <div class="bg-gradient-to-br from-red-500 to-pink-600 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
-                <h3 class="text-2xl font-bold text-white mb-4">Dedicated Servers</h3>
-                <p class="text-gray-200 mb-6">Take care of all your community needs with a dedicated server, providing you with full root access.</p>
-                <a href="#" class="inline-flex items-center text-white font-medium hover:text-gray-200">
-                    Read More
-                    <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 6.414V17a1 1 0 11-2 0V6.414L4.707 10.707a1 1 0 01-1.414-1.414l6-6z" clip-rule="evenodd"/>
-                    </svg>
-                </a>
-            </div>
-            
-            <!-- Code Hosting -->
-            <div class="bg-gradient-to-br from-green-500 to-lime-600 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
-                <h3 class="text-2xl font-bold text-white mb-4">Code Hosting</h3>
-                <p class="text-gray-200 mb-6">Host and run your bots/scripts for any job with multi-language support, ensuring that you are up and running smoothly.</p>
-                <a href="#" class="inline-flex items-center text-white font-medium hover:text-gray-200">
-                    Read More
-                    <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 6.414V17a1 1 0 11-2 0V6.414L4.707 10.707a1 1 0 01-1.414-1.414l6-6z" clip-rule="evenodd"/>
-                    </svg>
-                </a>
-            </div>
-            
-            <!-- Domain Registration Card -->
-            <div class="bg-gradient-to-br from-yellow-500 to-orange-600 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
-                <h3 class="text-2xl font-bold text-white mb-4">Web Hosting</h3>
-                <p class="text-gray-200 mb-6">Give your gaming community a website to be proud of, for pennies per day: $3.25/month</p>
-                <a href="#" class="inline-flex items-center text-white font-medium hover:text-gray-200">
-                    Read More
-                    <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 6.414V17a1 1 0 11-2 0V6.414L4.707 10.707a1 1 0 01-1.414-1.414l6-6z" clip-rule="evenodd"/>
-                    </svg>
-                </a>
-            </div>
-
+    <section class="mb-8">
+        <h2 class="text-2xl font-bold text-white mb-2 flex items-center">
+            <span class="section-number text-3xl mr-2">6.</span> Payment Terms and Billing
+        </h2>
+        <p>All services require payment in advance, and payments must be made using the accepted payment methods. You authorize us to charge your payment method on a recurring basis for subscription-based services.</p>
+        <div class="mt-4 bg-purple-900 p-4 rounded-md text-white">
+            <p>Important: All payments are non-refundable, except as required by law or as otherwise stated in our refund policy.</p>
         </div>
-    </div>
-</section>
-<!-- End Card Section -->
+    </section>
+
+    <section class="mb-8">
+        <h2 class="text-2xl font-bold text-white mb-2 flex items-center">
+            <span class="section-number text-3xl mr-2">7.</span> Suspension and Termination
+        </h2>
+        <p>We may suspend or terminate your access to services if you violate these Terms, or for any other reason, at our sole discretion. We will notify you of any such suspension or termination.</p>
+        <p class="mt-2 text-yellow-400">Note: You will not be entitled to a refund if your account is terminated for violating these Terms.</p>
+    </section>
+
+    <section class="mb-8">
+        <h2 class="text-2xl font-bold text-white mb-2 flex items-center">
+            <span class="section-number text-3xl mr-2">8.</span> Intellectual Property Rights
+        </h2>
+        <p>All content, including text, graphics, logos, and software, are the property of Stumpy's Hosting or its licensors. You may not reproduce, distribute, or create derivative works without prior written consent.</p>
+    </section>
+
+    <section class="mb-8">
+        <h2 class="text-2xl font-bold text-white mb-2 flex items-center">
+            <span class="section-number text-3xl mr-2">9.</span> Limitation of Liability
+        </h2>
+        <p>Stumpy's Hosting will not be liable for any indirect, incidental, special, or consequential damages resulting from the use or inability to use our services. Your sole remedy is to discontinue use.</p>
+    </section>
+
+    <section class="mb-8">
+        <h2 class="text-2xl font-bold text-white mb-2 flex items-center">
+            <span class="section-number text-3xl mr-2">10.</span> Governing Law
+        </h2>
+        <p>These Terms will be governed by and construed in accordance with the laws of the jurisdiction in which Stumpy's Hosting operates. You agree to submit to the exclusive jurisdiction of the courts located in that jurisdiction.</p>
+    </section>
+
+    <section class="mb-8">
+        <h2 class="text-2xl font-bold text-white mb-2 flex items-center">
+            <span class="section-number text-3xl mr-2">11.</span> Contact Information
+        </h2>
+        <p>If you have any questions about these Terms, please contact us at:</p>
+        <p>Email: <a href="mailto:support@stumpyshosting.com" class="text-purple-400 hover:text-purple-300">support@stumpyshosting.com</a></p>
+    </section>
+
+    <p class="text-center text-gray-500 text-sm mt-12">&copy; 2024 Stumpy's Hosting. All rights reserved.</p>
+</main>
+
 
 <!-- Footer Section -->
 <footer class="bg-black text-gray-300 py-10">
