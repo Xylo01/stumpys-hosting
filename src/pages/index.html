@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Stumpy's Hosting</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+<!-- Header -->
+<header class="fixed w-full bg-gray-900 z-50">
+    <nav class="bg-gray-900 border-gray-200 py-2.5">
+        <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+            <!-- Logo and Brand Name -->
+            <a href="#" class="flex items-center">
+                <img src="../../images/S.png" class="h-6 mr-3 sm:h-9" alt="Landwind Logo" />
+                <span class="self-center text-xl font-semibold whitespace-nowrap text-white">Stumpy's Hostings</span>
+            </a>
+            <div class="flex items-center lg:order-2">
+                <!-- Mobile Menu Toggle Button -->
+                <button id="menu-toggle" type="button" 
+                        class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" 
+                        aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <div class="hidden lg:flex lg:items-center lg:w-auto lg:order-1">
+                <ul class="flex space-x-6 text-white">
+                    <li><a href="#" class="hover:text-purple-500">Home</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Company</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Marketplace</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Features</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Team</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Contact</a></li>
+                </ul>
+                <a href="https://themesberg.com/product/tailwind-css/landing-page" 
+                   class="ml-6 text-black font-semibold bg-yellow-300 hover:bg-yellow-300 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2.5 dark:bg-yellow-300 dark:hover:bg-yellow-300 focus:outline-none dark:focus:ring-purple-800">
+                    Client Login
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 bg-gray-900 bg-opacity-95 transform -translate-x-full transition-transform duration-300 ease-in-out z-40">
+        <div class="flex flex-col p-6">
+            <!-- Close Button for Mobile Menu -->
+            <button id="menu-close" class="text-white self-end mb-6">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <!-- Navigation Links -->
+            <ul class="space-y-6">
+                <li><a href="#" class="block text-white text-lg hover:text-purple-500">Home</a></li>
+                <li><a href="#" class="block text-white text-lg hover:text-purple-500">Company</a></li>
+                <li><a href="#" class="block text-white text-lg hover:text-purple-500">Marketplace</a></li>
+                <li><a href="#" class="block text-white text-lg hover:text-purple-500">Features</a></li>
+                <li><a href="#" class="block text-white text-lg hover:text-purple-500">Team</a></li>
+                <li><a href="#" class="block text-white text-lg hover:text-purple-500">Contact</a></li>
+            </ul>
+            <!-- Download Button -->
+            <a href="https://themesberg.com/product/tailwind-css/landing-page" 
+               class="mt-8 text-center text-black font-semibold bg-yellow-300 hover:bg-yellow-300 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-base px-4 py-2.5 w-full block dark:bg-yellow-300 dark:hover:bg-yellow-300 focus:outline-none dark:focus:ring-yellow-300">
+                Download
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content (Push content down to avoid overlap with the fixed header) -->
+<main class="pt-24">
+    <!-- Your main content goes here -->
+</main>
+
+<!-- JavaScript for Menu Toggle -->
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuClose = document.getElementById('menu-close');
+
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.remove('-translate-x-full');
+    });
+
+    menuClose.addEventListener('click', () => {
+        mobileMenu.classList.add('-translate-x-full');
+    });
+</script>
+
+</body>
+</html>
+
+
+<!-- Start Header Section -->
+<body>
+    <header class="fixed w-full z-50">
+        <nav class="bg-white border-b border-gray-200 py-3 dark:bg-gray-900">
+            <div class="max-w-screen-xl mx-auto flex justify-between items-center px-4">
+                <!-- Logo and Brand Name -->
+                <a href="#" class="flex items-center">
+                    <img src="../../images/S.png" alt="Landwind Logo" class="h-8 mr-2">
+                    <span class="text-xl font-semibold dark:text-white">Stumpy's Hostings</span>
+                </a>
+
+                <!-- Download Button -->
+                <div class="flex items-center space-x-4 lg:space-x-6 lg:order-2">
+                    <a href="#" 
+                         class="ml-6 text-black font-semibold bg-yellow-300 hover:bg-yellow-300 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2.5 dark:bg-yellow-300 dark:hover:bg-yellow-300 focus:outline-none dark:focus:ring-yellow-300">
+                        Client Login
+                    </a>
+                    <button class="lg:hidden p-2 text-gray-500 rounded-lg focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        data-collapse-toggle="mobile-menu-2" aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!---- navigation Links ---->
+                <div class="hidden lg:flex lg:items-center lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <ul class="flex flex-col lg:flex-row lg:space-x-8 mt-4 lg:mt-0">
+                        <li><a href="#" class="block py-2 text-purple-700 lg:text-purple-700 lg:bg-transparent dark:text-white">Home</a></li>
+                        <li><a href="#" class="block py-2 text-gray-700 hover:text-purple-700 dark:text-gray-400 dark:hover:text-white">Company</a></li>
+                        <li><a href="#" class="block py-2 text-gray-700 hover:text-purple-700 dark:text-gray-400 dark:hover:text-white">Marketplace</a></li>
+                        <li><a href="#" class="block py-2 text-gray-700 hover:text-purple-700 dark:text-gray-400 dark:hover:text-white">Features</a></li>
+                        <li><a href="#" class="block py-2 text-gray-700 hover:text-purple-700 dark:text-gray-400 dark:hover:text-white">Team</a></li>
+                        <li><a href="#" class="block py-2 text-gray-700 dark:text-gray-400 dark:hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+<!-- End Header Section -->
+
+<!-- Start Title Section -->
+<section class="relative bg-gray-900 text-white h-screen flex items-center justify-center overflow-hidden">
+    <!-- Background Image or Slideshow Container -->
+    <div class="absolute inset-0 bg-cover bg-center opacity-30 bg-[url('../../images/title-bg.png')] " style="">
+        <!-- Replace the URL with your game panel image or slideshow -->
+    </div>
+
+    <!-- Content Overlay -->
+    <div class="relative z-10 text-center px-6 mt-20"> <!-- Added mt-20 for spacing -->
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-4 animate-fade-in">Welcome to Our Game Hosting Panel</h1>
+        <p class="text-lg md:text-xl mb-8 animate-fade-in delay-200">Experience seamless, high-performance gaming with our modern control panel</p>
+        
+        <!-- Button (optional) -->
+        <a href="#services" class="inline-flex items-center bg-purple-700 hover:bg-purple-800 text-white font-medium rounded-lg text-base px-6 py-3 transition-colors duration-300 focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-800 animate-fade-in delay-400">
+            Explore Our Services
+            <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M12.293 9.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 11.586l3.293-3.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Scroll Down Indicator -->
+    <div class="absolute bottom-4 text-center animate-bounce">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+    </div>
+</section>
+
+<!-- End Title Section -->
+
+<!-- Start Card Section -->
+<section class="bg-gray-900 py-12">
+    <div class="max-w-screen-xl mx-auto px-4">
+        <h2 class="text-4xl font-extrabold text-white text-center mb-12">Our Hosting Services</h2>
+        <div class="grid gap-8 lg:grid-cols-3 sm:grid-cols-2">
+            
+            <!-- VPS Hosting Card -->
+            <div class="bg-gradient-to-br from-purple-700 to-indigo-600 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-2xl font-bold text-white mb-4">VPS Hosting</h3>
+                <p class="text-gray-200 mb-6">Fast and reliable Virtual Private Servers to support your gaming community start as low as $3.15/month.</p>
+                <a href="#" class="inline-flex items-center text-white font-medium hover:text-gray-200">
+                    Read More 
+                    <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 6.414V17a1 1 0 11-2 0V6.414L4.707 10.707a1 1 0 01-1.414-1.414l6-6z" clip-rule="evenodd"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <!-- Game Servers Card -->
+            <div class="bg-gradient-to-br from-teal-500 to-cyan-600 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-2xl font-bold text-white mb-4">Game Servers</h3>
+                <p class="text-gray-200 mb-6">Set up a private gaming server for as low as $3 a month.Choose from Minecraft, Gary's Mod, and MANY others.</p>
+                <a href="#" class="inline-flex items-center text-white font-medium hover:text-gray-200">
+                    Read More
+                    <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 6.414V17a1 1 0 11-2 0V6.414L4.707 10.707a1 1 0 01-1.414-1.414l6-6z" clip-rule="evenodd"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Dedicated Servers Card -->
+            <div class="bg-gradient-to-br from-red-500 to-pink-600 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-2xl font-bold text-white mb-4">Dedicated Servers</h3>
+                <p class="text-gray-200 mb-6">Take care of all your community needs with a dedicated server, providing you with full root access.</p>
+                <a href="#" class="inline-flex items-center text-white font-medium hover:text-gray-200">
+                    Read More
+                    <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 6.414V17a1 1 0 11-2 0V6.414L4.707 10.707a1 1 0 01-1.414-1.414l6-6z" clip-rule="evenodd"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <!-- Code Hosting -->
+            <div class="bg-gradient-to-br from-green-500 to-lime-600 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-2xl font-bold text-white mb-4">Code Hosting</h3>
+                <p class="text-gray-200 mb-6">Host and run your bots/scripts for any job with multi-language support, ensuring that you are up and running smoothly.</p>
+                <a href="#" class="inline-flex items-center text-white font-medium hover:text-gray-200">
+                    Read More
+                    <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 6.414V17a1 1 0 11-2 0V6.414L4.707 10.707a1 1 0 01-1.414-1.414l6-6z" clip-rule="evenodd"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <!-- Domain Registration Card -->
+            <div class="bg-gradient-to-br from-yellow-500 to-orange-600 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-2xl font-bold text-white mb-4">Web Hosting</h3>
+                <p class="text-gray-200 mb-6">Give your gaming community a website to be proud of, for pennies per day: $3.25/month</p>
+                <a href="#" class="inline-flex items-center text-white font-medium hover:text-gray-200">
+                    Read More
+                    <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 6.414V17a1 1 0 11-2 0V6.414L4.707 10.707a1 1 0 01-1.414-1.414l6-6z" clip-rule="evenodd"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- End Card Section -->
+
