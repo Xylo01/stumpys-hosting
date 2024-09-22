@@ -7,14 +7,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
+<body class="bg-gray-900 text-white"></body>
+
 <!-- Start Header Section -->
 <header class="fixed w-full bg-gray-900 z-50">
+    
     <nav class="bg-gray-900 border-gray-200 py-2.5">
         <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
             <!-- Logo and Brand Name -->
             <a href="#" class="flex items-center">
-                <img src="../../images/S.png" class="h-6 mr-3 sm:h-9" alt="Landwind Logo" />
-                <span class="self-center text-xl font-semibold whitespace-nowrap text-white">Stumpy's Hostings</span>
+                <img src="../../images/S.png" class="h-6 mr-3 sm:h-9" alt="Stumpy's Logo" />
+                <span class="self-center text-xl font-semibold whitespace-nowrap text-white">Stumpy's Hosting</span>
             </a>
             <div class="flex items-center lg:order-2">
                 <!-- Mobile Menu Toggle Button -->
@@ -97,12 +100,10 @@
 </html>
 <!-- End Header Section -->
 
-
 <!-- Start Title Section -->
 <section class="relative bg-gray-900 text-white h-screen flex items-center justify-center overflow-hidden">
-    <!-- Background Image or Slideshow Container -->
     <div class="absolute inset-0 bg-cover bg-center opacity-30 bg-[url('../../images/title-bg.png')] " style="">
-        <!-- Replace the URL with your game panel image or slideshow -->
+        <!-- Replace the URL with your image -->
     </div>
 
     <!-- Content Overlay -->
@@ -111,12 +112,13 @@
         <p class="text-lg md:text-xl mb-8 animate-fade-in delay-200">Experience seamless, high-performance gaming with our modern control panel</p>
         
         <!-- Button (optional) -->
-        <a href="#services" class="inline-flex items-center bg-purple-700 hover:bg-purple-800 text-white font-medium rounded-lg text-base px-6 py-3 transition-colors duration-300 focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-800 animate-fade-in delay-400">
-            Explore Our Services
+        <a href="#services" class="inline-flex items-center bg-yellow-300 hover:bg-purple-800 text-black font-semibold font-medium rounded-lg text-base px-6 py-3 transition-colors duration-300 focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-800 animate-fade-in delay-400">
+             Explore Our Services
             <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M12.293 9.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 11.586l3.293-3.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-            </svg>
-        </a>
+         <path fill-rule="evenodd" d="M12.293 9.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 11.586l3.293-3.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+    </svg>
+</a>
+
     </div>
 
     <!-- Scroll Down Indicator -->
@@ -129,11 +131,90 @@
 
 <!-- End Title Section -->
 
+<!-- Why Choose Us Section -->
+<section class="bg-gray-900 py-16">
+    <div class="max-w-screen-xl mx-auto px-4 text-center">
+        <h2 class="text-4xl font-extrabold text-white mb-12">Why Choose Us</h2>
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            
+            <!-- Card 1: Reliable Uptime -->
+            <div class="bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                <div class="flex items-center justify-center mb-4">
+                    <svg class="w-10 h-10 text-purple-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2a10 10 0 1 1-10 10A10 10 0 0 1 12 2Zm0 18a8 8 0 1 0-8-8 8 8 0 0 0 8 8Zm-1-13h2v6h-2Zm0 8h2v2h-2Z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">Reliable Uptime</h3>
+                <p class="text-gray-300">We guarantee 99.9% uptime to ensure your services are always available.</p>
+            </div>
+            
+            <!-- Card 2: Affordable Pricing -->
+            <div class="bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                <div class="flex items-center justify-center mb-4">
+                    <svg class="w-10 h-10 text-green-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2a10 10 0 1 1-10 10A10 10 0 0 1 12 2Zm0 18a8 8 0 1 0-8-8 8 8 0 0 0 8 8ZM11 7h2v5h-2Zm0 7h2v2h-2Z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">Affordable Pricing</h3>
+                <p class="text-gray-300">Our plans offer premium services without the high cost.</p>
+            </div>
+            
+            <!-- Card 3: 24/7 Support -->
+            <div class="bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                <div class="flex items-center justify-center mb-4">
+                    <svg class="w-10 h-10 text-red-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2a10 10 0 1 1-10 10A10 10 0 0 1 12 2Zm0 18a8 8 0 1 0-8-8 8 8 0 0 0 8 8ZM11 7h2v5h-2Zm0 7h2v2h-2Z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">24/7 Support</h3>
+                <p class="text-gray-300">Our team is available around the clock to assist you.</p>
+            </div>
+            
+            <!-- Card 4: High Performance -->
+            <div class="bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                <div class="flex items-center justify-center mb-4">
+                    <svg class="w-10 h-10 text-yellow-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2a10 10 0 1 1-10 10A10 10 0 0 1 12 2Zm0 18a8 8 0 1 0-8-8 8 8 0 0 0 8 8ZM11 7h2v5h-2Zm0 7h2v2h-2Z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">High Performance</h3>
+                <p class="text-gray-300">Experience blazing fast speeds with our optimized servers.</p>
+            </div>
+            
+            <!-- Card 5: Scalable Solutions -->
+            <div class="bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                <div class="flex items-center justify-center mb-4">
+                    <svg class="w-10 h-10 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2a10 10 0 1 1-10 10A10 10 0 0 1 12 2Zm0 18a8 8 0 1 0-8-8 8 8 0 0 0 8 8ZM11 7h2v5h-2Zm0 7h2v2h-2Z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">Scalable Solutions</h3>
+                <p class="text-gray-300">Our hosting grows with your business, offering flexibility.</p>
+            </div>
+            
+            <!-- Card 6: Easy Control Panel -->
+            <div class="bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                <div class="flex items-center justify-center mb-4">
+                    <svg class="w-10 h-10 text-indigo-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2a10 10 0 1 1-10 10A10 10 0 0 1 12 2Zm0 18a8 8 0 1 0-8-8 8 8 0 0 0 8 8ZM11 7h2v5h-2Zm0 7h2v2h-2Z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">Easy Control Panel</h3>
+                <p class="text-gray-300">Manage your hosting with ease using our intuitive control panel.</p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
 <!-- Start Card Section -->
-<section class="bg-gray-900 py-12">
+<section id="services" class="bg-gray-900 py-12">
     <div class="max-w-screen-xl mx-auto px-4">
         <h2 class="text-4xl font-extrabold text-white text-center mb-12">Our Hosting Services</h2>
         <div class="grid gap-8 lg:grid-cols-3 sm:grid-cols-2">
+            <html class="scroll-smooth"></html>
             
             <!-- VPS Hosting Card -->
             <div class="bg-gradient-to-br from-purple-700 to-indigo-600 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
@@ -200,3 +281,95 @@
 </section>
 <!-- End Card Section -->
 
+<!-- Footer Section -->
+<footer class="bg-black text-gray-300 py-10">
+    <div class="max-w-screen-xl mx-auto px-4">
+        <div class="flex flex-wrap justify-between">
+            
+            <!-- Branding & Tagline -->
+            <div class="w-full lg:w-1/4 mb-8 lg:mb-0">
+                <div class="flex items-center mb-4">
+                    <img src="../../images/S.png" alt="Stumpy's Hosting Logo" class="h-10 w-10 mr-3">
+                    <span class="text-white text-2xl font-bold">Stumpy's Hosting</span>
+                </div>
+                <p class="text-gray-400">Hosting for gamers. By gamers.</p>
+            </div>
+
+            <!-- Services Column -->
+            <div class="w-1/2 sm:w-1/4 lg:w-1/6 mb-8">
+                <h3 class="text-white text-lg font-semibold mb-4">Services</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-purple-500">Game Servers</a></li>
+                    <li><a href="#" class="hover:text-purple-500">VPS Hosting</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Code Hosting</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Web Hosting</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Dedicated Hosting</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Reseller Hosting</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Colocation</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Column -->
+            <div class="w-1/2 sm:w-1/4 lg:w-1/6 mb-8">
+                <h3 class="text-white text-lg font-semibold mb-4">Company</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-purple-500">About Us</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Why Us</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Terms of Service</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Acceptable Use Policy</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Support Scope</a></li>
+                </ul>
+            </div>
+
+            <!-- Information Column -->
+            <div class="w-1/2 sm:w-1/4 lg:w-1/6 mb-8">
+                <h3 class="text-white text-lg font-semibold mb-4">Information</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-purple-500">FAQs</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Knowledgebase</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Partners</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Server Status</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Partnership Docs</a></li>
+                </ul>
+            </div>
+
+            <!-- Tools Column -->
+            <div class="w-1/2 sm:w-1/4 lg:w-1/6 mb-8">
+                <h3 class="text-white text-lg font-semibold mb-4">Tools</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-purple-500">Port Checker</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Whois Lookup</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Check MX</a></li>
+                    <li><a href="#" class="hover:text-purple-500">PuTTY</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Social Media Links & Copyright -->
+        <div class="mt-8 border-t border-gray-800 pt-6 flex flex-col lg:flex-row justify-between items-center">
+            <div class="flex space-x-4 mb-4 lg:mb-0">
+                <!-- Social Media Icons -->
+                <a href="#" class="text-gray-400 hover:text-white" aria-label="Facebook">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.675 0h-21.35C.595 0 0 .585 0 1.309v21.382C0 23.415.595 24 1.325 24H12v-9.294H9.294V12h2.706V9.294c0-2.676 1.576-4.149 4.004-4.149 1.147 0 2.15.085 2.438.125v2.827h-1.694c-1.324 0-1.584.631-1.584 1.558V12h3.165l-.413 2.706H14.87V24h7.805c.73 0 1.325-.585 1.325-1.309V1.309C24 .585 23.405 0 22.675 0z" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white" aria-label="Twitter">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4.557a9.927 9.927 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724 9.864 9.864 0 0 1-3.127 1.195 4.924 4.924 0 0 0-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161c-.444.761-.7 1.648-.7 2.575 0 1.78.904 3.351 2.283 4.275a4.905 4.905 0 0 1-2.228-.616c-.054 2.08 1.437 4.006 3.57 4.432a4.952 4.952 0 0 1-2.224.085c.623 1.951 2.432 3.374 4.576 3.412A9.862 9.862 0 0 1 0 19.54a13.936 13.936 0 0 0 7.548 2.212c9.056 0 14.008-7.496 14.008-13.986 0-.214-.005-.428-.015-.639A9.935 9.935 0 0 0 24 4.557z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white" aria-label="LinkedIn">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.23 0H1.77C.792 0 0 .77 0 1.76v20.47c0 .99.792 1.77 1.77 1.77h20.46c.99 0 1.77-.78 1.77-1.77V1.76C24 .77 23.22 0 22.23 0zM7.12 20.455H3.54v-9.364h3.58v9.364zM5.34 9.545a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zm15.12 10.91h-3.58v-4.97c0-1.185-.03-2.71-1.65-2.71-1.65 0-1.9 1.29-1.9 2.625v5.055h-3.58v-9.364h3.44v1.28h.05c.48-.89 1.64-1.83 3.38-1.83 3.61 0 4.28 2.38 4.28 5.48v6.434h-.01z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <!-- Copyright Notice -->
+            <p class="text-gray-500">&copy; 2024 Stumpy's Hosting. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
